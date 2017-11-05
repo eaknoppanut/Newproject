@@ -1,0 +1,32 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "ยังทำ Nav ไม่ขึ้นเลยฝากแก้ทีในcomponent nav html ถ้าได้แล้วเด๋วมาทำloginต่อ",
+  "main": "app.js",
+  "dependencies": {
+    "angular2-flash-messages": "^1.0.8",
+    "angular-flash-alert": "^2.5.0",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*",
+    "express":"*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaknoppanut/Newproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaknoppanut/Newproject/issues"
+  },
+  "homepage": "https://github.com/eaknoppanut/Newproject#readme"
+}
