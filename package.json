@@ -4,16 +4,17 @@
   "description": "ยังทำ Nav ไม่ขึ้นเลยฝากแก้ทีในcomponent nav html ถ้าได้แล้วเด๋วมาทำloginต่อ",
   "main": "app.js",
   "dependencies": {
-    "angular2-flash-messages": "^1.0.8",
     "angular-flash-alert": "^2.5.0",
-    "mongoose":"*",
-    "bcryptjs":"*",
-    "cors":"*",
-    "jsonwebtoken":"*",
-    "body-parser":"*",
-    "passport":"*",
-    "passport-jwt":"*",
-    "express":"*"
+    "angular2-flash-messages": "^1.0.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongodb": "^3.0.0-rc0",
+    "mongoose": "^4.13.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
