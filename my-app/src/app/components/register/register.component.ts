@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   email : String;
   password: String;
 
-   
+  
   constructor(
     private  validateService : ValidateService,
     private flashMessage:FlashMessagesService,
@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
       email:this.email,
       username:this.username,
       password:this.password,
-
+      
     }
     if(!this.validateService.validateRegister(user)){
       this.flashMessage.show('Please fill in all fields',{cssClass: 'alert-danger',timeout :3000})

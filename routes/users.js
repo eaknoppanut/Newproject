@@ -14,8 +14,13 @@ router.post('/register', (req, res, next) => {
     password: req.body.password
   });
 
+  // if(req.body.adminCode === '1150') {
+  //   newUser.isAdmin = true;
+  // }
+
   User.addUser(newUser, (err, user) => {
     if(err){
+      console.log(err);
       res.json({success: false, msg:'Failed to register user'});
     } else {
       res.json({success: true, msg:'User registered'});
