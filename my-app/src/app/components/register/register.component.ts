@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
   username: String;
   email : String;
   password: String;
-  isAdmin: String;
+  adminCode: Boolean;
 
   
   constructor(
@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
       email:this.email,
       username:this.username,
       password:this.password,
-      isAdmin:this.isAdmin
+      adminCode:this.adminCode
       
     }
     if(!this.validateService.validateRegister(user)){
