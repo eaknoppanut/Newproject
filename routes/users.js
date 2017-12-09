@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 const User = require('../models/user');
 
+
 // Register
 router.post('/register', (req, res, next) => {
   let newUser = new User({
@@ -14,15 +15,16 @@ router.post('/register', (req, res, next) => {
     password: req.body.password
   });
 
-  // if(req.body.adminCode === '1150') {
-  //   newUser.isAdmin = true;
-  // }
+  if(req.body.adminCode === "1150") {
+    newUser.isAdmin = true;
+  }
 
   User.addUser(newUser, (err, user) => {
     if(err){
       console.log(err);
       res.json({success: false, msg:'Failed to register user'});
     } else {
+      console.log(err);
       res.json({success: true, msg:'User registered'});
     }
   });

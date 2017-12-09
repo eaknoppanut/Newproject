@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('../config/database');
+const passportLocalMongoose = require("passport-local-mongoose");
 
 // User Schema
 const UserSchema = mongoose.Schema({
@@ -25,7 +26,11 @@ const UserSchema = mongoose.Schema({
   }
 });
 
+UserSchema.plugin(passportLocalMongoose)
+
 const User = module.exports = mongoose.model('User', UserSchema);
+
+//----------------------------------------------------------------------
 
 module.exports.getUserById = function(id, callback){
   User.findById(id, callback);
