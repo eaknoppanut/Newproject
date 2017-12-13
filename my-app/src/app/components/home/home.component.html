@@ -1,8 +1,10 @@
+<div class="container">
 <h1>Hello From The Other Side. </h1>
 <h1>Mr.{{name}}</h1>
 <!-- <% if(currentUser && currentUser.isAdmin() { %>
     <h1>Welcome Admin!</h1>
 <% } %> -->
+</div>
 <div class="ratio-group col-auto">
     <label for="gender">Gender: </label>
     <label><input type="radio" name="male">Male</label>
@@ -11,11 +13,11 @@
 <div>
     <div class="form-group col-auto" id="food">
         <label for="height">ส่วนสูง</label>
-        <input type="number" class="form-control" id="heightInput" aria-describedby="heightHelp" placeholder="Enter Height">
+        <input type="number" class="form-control" id="heightInput" aria-describedby="heightHelp" placeholder="Enter Height" min="0">
     </div>
     <div class="form-group col-auto" id="calories">
         <label for="weight">น้ำหนัก</label>
-        <input type="number" class="form-control" id="weightInput" placeholder="Weight">
+        <input type="number" class="form-control" id="weightInput" placeholder="Weight" min="0">
     </div>
     <div class="col-auto">
         <button type="button" class="btn btn-primary">Calcualte</button>
